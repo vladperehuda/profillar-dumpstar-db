@@ -90,18 +90,6 @@ custom_formats_radarr:
   score: -10000
 custom_formats_sonarr: []
 qualities:
-- id: -2
-  name: 1080p
-  description: ''
-  qualities:
-  - id: 9
-    name: WEBDL-1080p
-  - id: 11
-    name: WEBRip-1080p
-  - id: 10
-    name: Bluray-1080p
-  - id: 8
-    name: Remux-1080p
 - id: -1
   name: 2160p
   description: ''
@@ -114,6 +102,18 @@ qualities:
     name: Bluray-2160p
   - id: 3
     name: Remux-2160p
+- id: -2
+  name: 1080p
+  description: ''
+  qualities:
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
+  - id: 10
+    name: Bluray-1080p
+  - id: 8
+    name: Remux-1080p
 - id: -3
   name: 720p
   description: ''
@@ -125,6 +125,6 @@ qualities:
   - id: 13
     name: Bluray-720p
 upgrade_until:
-  id: -2
-  name: 1080p
+  id: -1
+  name: 2160p
 language: any
