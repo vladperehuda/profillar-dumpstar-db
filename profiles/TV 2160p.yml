@@ -13,9 +13,7 @@ upgradesAllowed: true
 minCustomFormatScore: 0
 upgradeUntilScore: 10000
 minScoreIncrement: 1
-custom_formats:
-- name: ASL
-  score: -10000
+custom_formats: []
 custom_formats_radarr: []
 custom_formats_sonarr:
 - name: WEB DL
@@ -112,6 +110,8 @@ custom_formats_sonarr:
   score: 5
 - name: Repack1
   score: 5
+- name: ASL
+  score: -10000
 - name: AV1
   score: -10000
 - name: Bad Multis
