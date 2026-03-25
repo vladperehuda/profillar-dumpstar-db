@@ -1,12 +1,16 @@
 name: WEB-DL
-description: Matches releases from WEB-DL sources.
+description: ''
 tags:
 - WEB-DL
-- Source
 conditions:
 - name: WEB-DL
-  type: source
-  required: true
   negate: false
+  required: false
   source: web_dl
+  type: source
+- name: WEBRip
+  negate: false
+  required: false
+  source: webrip
+  type: source
 tests: []

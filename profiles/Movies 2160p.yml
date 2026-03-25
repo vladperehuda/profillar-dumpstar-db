@@ -19,7 +19,7 @@ upgradeUntilScore: 10000
 minScoreIncrement: 1
 custom_formats: []
 custom_formats_radarr:
-- name: WEB DL
+- name: WEB-DL
   score: 1700
 - name: 1080p Bluray
   score: 1100
