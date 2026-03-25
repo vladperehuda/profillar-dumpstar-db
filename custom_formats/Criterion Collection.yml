@@ -23,9 +23,4 @@ conditions:
   required: false
   negate: false
   pattern: Criterion
-- name: Not Criterion Group
-  type: release_group
-  required: true
-  negate: true
-  pattern: Criterion Group
 tests: []

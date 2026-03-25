@@ -18,9 +18,4 @@ conditions:
   required: false
   negate: false
   source: webrip
-- name: Not Criterion Group
-  negate: true
-  pattern: Criterion Group
-  required: true
-  type: release_group
 tests: []

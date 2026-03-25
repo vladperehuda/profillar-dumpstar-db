@@ -11,11 +11,6 @@ conditions:
   required: true
   source: web_dl
   type: source
-- name: iPT Internals
-  negate: false
-  pattern: iPT Internals
-  required: true
-  type: release_group
 - name: WEBRip
   negate: true
   required: true
@@ -66,11 +61,6 @@ conditions:
   pattern: Paramount+
   required: true
   type: release_title
-- name: CRiT Regex
-  negate: true
-  pattern: Criterion Channel
-  required: true
-  type: release_group
 - name: HULU Regex
   negate: true
   pattern: Hulu
@@ -143,12 +133,6 @@ tests:
     required: false
     type: release_title
   - matches: false
-    name: CRiT Regex
-    negate: true
-    pattern: Criterion Channel
-    required: false
-    type: release_group
-  - matches: false
     name: HULU Regex
     negate: true
     pattern: Hulu
@@ -160,12 +144,6 @@ tests:
     pattern: Roku
     required: false
     type: release_title
-  - matches: true
-    name: iPT Internals
-    negate: false
-    pattern: iPT Internals
-    required: true
-    type: release_group
   - matches: false
     name: iTunes Regex
     negate: true
@@ -233,12 +211,6 @@ tests:
     required: false
     type: release_title
   - matches: false
-    name: CRiT Regex
-    negate: true
-    pattern: Criterion Channel
-    required: false
-    type: release_group
-  - matches: false
     name: HULU Regex
     negate: true
     pattern: Hulu
@@ -250,12 +222,6 @@ tests:
     pattern: Roku
     required: false
     type: release_title
-  - matches: true
-    name: iPT Internals
-    negate: false
-    pattern: iPT Internals
-    required: true
-    type: release_group
   - matches: true
     name: iTunes Regex
     negate: true
@@ -323,12 +289,6 @@ tests:
     required: false
     type: release_title
   - matches: false
-    name: CRiT Regex
-    negate: true
-    pattern: Criterion Channel
-    required: false
-    type: release_group
-  - matches: false
     name: HULU Regex
     negate: true
     pattern: Hulu
@@ -340,12 +300,6 @@ tests:
     pattern: Roku
     required: false
     type: release_title
-  - matches: true
-    name: iPT Internals
-    negate: false
-    pattern: iPT Internals
-    required: true
-    type: release_group
   - matches: false
     name: iTunes Regex
     negate: true
@@ -413,12 +367,6 @@ tests:
     required: false
     type: release_title
   - matches: false
-    name: CRiT Regex
-    negate: true
-    pattern: Criterion Channel
-    required: false
-    type: release_group
-  - matches: false
     name: HULU Regex
     negate: true
     pattern: Hulu
@@ -430,12 +378,6 @@ tests:
     pattern: Roku
     required: false
     type: release_title
-  - matches: true
-    name: iPT Internals
-    negate: false
-    pattern: iPT Internals
-    required: true
-    type: release_group
   - matches: true
     name: iTunes Regex
     negate: true

@@ -9,9 +9,4 @@ conditions:
   qualityModifier: remux
   required: true
   type: quality_modifier
-- name: Dictionarry Remux Tier 01
-  negate: false
-  pattern: Dictionarry Remux Tier 01
-  required: false
-  type: release_group
 tests: []

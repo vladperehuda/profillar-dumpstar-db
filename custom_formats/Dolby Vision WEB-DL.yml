@@ -30,11 +30,6 @@ conditions:
   required: false
   negate: false
   source: webrip
-- name: Not Flights
-  type: release_group
-  required: true
-  negate: true
-  pattern: Flights
 - name: Not HDR
   type: release_title
   required: true

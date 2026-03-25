@@ -1,0 +1,21 @@
+name: 2160p Bluray Tier 01
+description: ''
+tags:
+- 2160p
+conditions:
+- name: Bluray
+  negate: false
+  required: true
+  source: bluray
+  type: source
+- name: 2160p
+  negate: false
+  required: true
+  resolution: 2160p
+  type: resolution
+- name: Not Remux
+  negate: true
+  pattern: Remux
+  required: true
+  type: release_title
+tests: []

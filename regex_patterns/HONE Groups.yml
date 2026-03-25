@@ -1,6 +1,0 @@
-name: HONE Groups
-pattern: ^(HONE|DiscoD|DarQ|Weasley)$
-description: ''
-tags:
-- Release Group
-tests: []
