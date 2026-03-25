@@ -160,4 +160,4 @@ qualities:
 upgrade_until:
   id: -2
   name: WEB 1080p
-language: must_original
+language: any
