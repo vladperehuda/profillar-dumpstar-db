@@ -24,12 +24,8 @@ custom_formats_sonarr:
   score: 1500
 - name: 720p Bluray
   score: 1300
-- name: 576p Bluray
-  score: 1000
 - name: Dolby Vision
   score: 1000
-- name: 480p Bluray
-  score: 800
 - name: HDR
   score: 500
 - name: HDR10+

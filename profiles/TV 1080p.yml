@@ -20,12 +20,6 @@ custom_formats_sonarr:
   score: 1700
 - name: 1080p Bluray
   score: 1500
-- name: 720p Bluray
-  score: 1300
-- name: 576p Bluray
-  score: 1000
-- name: 480p Bluray
-  score: 800
 - name: AMZN
   score: 75
 - name: ATVP
@@ -100,6 +94,8 @@ custom_formats_sonarr:
   score: 5
 - name: Repack1
   score: 5
+- name: 720p Bluray
+  score: 0
 - name: ASL
   score: -10000
 - name: AV1
@@ -129,18 +125,6 @@ qualities:
   name: Bluray-1080p
 - id: 12
   name: HDTV-1080p
-- id: -3
-  name: WEB 720p
-  description: ''
-  qualities:
-  - id: 14
-    name: WEBDL-720p
-  - id: 15
-    name: WEBRip-720p
-- id: 13
-  name: Bluray-720p
-- id: 16
-  name: HDTV-720p
 upgrade_until:
   id: -2
   name: WEB 1080p
