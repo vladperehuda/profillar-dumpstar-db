@@ -20,6 +20,8 @@ custom_formats_sonarr:
   score: 1700
 - name: 1080p Bluray
   score: 1500
+- name: Ukrainian
+  score: 100
 - name: AMZN
   score: 75
 - name: ATVP

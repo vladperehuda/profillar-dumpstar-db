@@ -30,6 +30,8 @@ custom_formats_sonarr:
   score: 500
 - name: HDR10+
   score: 500
+- name: Ukrainian
+  score: 100
 - name: AMZN
   score: 75
 - name: ATVP

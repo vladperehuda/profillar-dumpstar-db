@@ -28,6 +28,8 @@ custom_formats_radarr:
   score: 125
 - name: Dolby Digital
   score: 115
+- name: Ukrainian
+  score: 100
 - name: 4K Remaster
   score: 25
 - name: Atmos
