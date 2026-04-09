@@ -1,17 +1,18 @@
 name: Movies 2160p
-description: 'This profile focuses on streaming optimized sources with little to no
-  transcoding needed and is recommended for the average user or if you **do not**
-  use a dedicated streaming box. (i.e. AppleTV, NVIDIA Shield, etc)
+description: 'This profile is like the primary Movie profile, but with merged source
+  qualities. This results in higher-quality, WEB releases being preferred. This usually
+  results in higher-quality audio, higher video bitrates and 30% larger file size.
 
   - This profile is recommended for a set-it-and-forget-it setup.
 
-  - This profile does not allow releases with HD Audio to ensure direct-play compatibility.
+  - This profile prefers 4K releases with **HDR** and **Dolby Vision**.
 
-  - Releases without HDR fallback will be scored negatively to ensure playability
-  across platforms.'
+  - This profile will allow HD audio like TrueHD, DTS-X, etc but only if the source
+  is WEB-DL
+
+  - Releases **without** HDR fallback are not allowed.'
 tags:
 - Radarr
-- Streaming Optimized
 - 2160p
 upgradesAllowed: true
 minCustomFormatScore: 1000
@@ -33,12 +34,8 @@ custom_formats_radarr:
   score: 500
 - name: HDR10+
   score: 500
-- name: Dolby Digital +
-  score: 125
 - name: Special Edition
   score: 125
-- name: Dolby Digital
-  score: 115
 - name: Ukrainian
   score: 100
 - name: 4K Remaster
@@ -53,16 +50,10 @@ custom_formats_radarr:
   score: 20
 - name: BCORE
   score: 15
-- name: 7.1 Surround
-  score: 10
-- name: AAC
-  score: 10
 - name: Repack3
   score: 7
 - name: Repack2
   score: 6
-- name: 5.1 Surround
-  score: 5
 - name: Repack1
   score: 5
 - name: 3D
@@ -77,11 +68,11 @@ custom_formats_radarr:
   score: -10000
 - name: Dolby Vision WEB-DL
   score: -10000
-- name: DTS-HD HRA
+- name: DTS-HD HRA (WEB)
   score: -10000
-- name: DTS-HD MA
+- name: DTS-HD MA (WEB)
   score: -10000
-- name: DTS-X
+- name: DTS-X (WEB)
   score: -10000
 - name: Extras
   score: -10000
@@ -89,7 +80,7 @@ custom_formats_radarr:
   score: -10000
 - name: Sing Along
   score: -10000
-- name: TrueHD
+- name: TrueHD (WEB)
   score: -10000
 - name: TrueHD Missing
   score: -10000
@@ -97,38 +88,37 @@ custom_formats_radarr:
   score: -10000
 custom_formats_sonarr: []
 qualities:
-- id: 4
-  name: Bluray-2160p
 - id: -1
-  name: WEB-2160p
+  name: 2160p
   description: ''
   qualities:
   - id: 5
     name: WEBDL-2160p
   - id: 6
     name: WEBRip-2160p
-- id: 10
-  name: Bluray-1080p
+  - id: 4
+    name: Bluray-2160p
 - id: -2
-  name: WEB-1080p
+  name: 1080p
   description: ''
   qualities:
   - id: 9
     name: WEBDL-1080p
   - id: 11
     name: WEBRip-1080p
-- id: 13
-  name: Bluray-720p
+  - id: 10
+    name: Bluray-1080p
 - id: -3
-  name: WEB-720p
+  name: 720p
   description: ''
   qualities:
   - id: 15
     name: WEBRip-720p
   - id: 14
     name: WEBDL-720p
+  - id: 13
+    name: Bluray-720p
 upgrade_until:
-  id: 4
-  name: Bluray-2160p
-  description: 4K Ultra HD Blu-ray video encoded with lossy compression
+  id: -1
+  name: 2160p
 language: any
