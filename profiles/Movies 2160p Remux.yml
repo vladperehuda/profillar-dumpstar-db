@@ -2,11 +2,73 @@ name: Movies 2160p Remux
 description: Prioritise high quality lossless copies of UHD Blurays.
 tags: []
 upgradesAllowed: true
-minCustomFormatScore: 750
+minCustomFormatScore: 1000
 upgradeUntilScore: 10000
 minScoreIncrement: 0
 custom_formats: []
-custom_formats_radarr: []
+custom_formats_radarr:
+- name: 2160p Remux
+  score: 2000
+- name: WEB-DL
+  score: 1700
+- name: 2160p Bluray
+  score: 1600
+- name: 1080p Remux
+  score: 1500
+- name: 1080p Bluray
+  score: 1100
+- name: 720p Bluray
+  score: 1100
+- name: Dolby Vision
+  score: 1000
+- name: HDR
+  score: 500
+- name: HDR10+
+  score: 500
+- name: Ukrainian
+  score: 100
+- name: 4K Remaster
+  score: 25
+- name: Atmos
+  score: 25
+- name: Remaster
+  score: 25
+- name: Repack3
+  score: 7
+- name: Repack2
+  score: 6
+- name: Repack1
+  score: 5
+- name: 3D
+  score: -10000
+- name: ASL
+  score: -10000
+- name: AV1
+  score: -10000
+- name: B&W
+  score: -10000
+- name: BR-DISK
+  score: -10000
+- name: Dolby Vision WEB-DL
+  score: -10000
+- name: DTS-HD HRA (WEB)
+  score: -10000
+- name: DTS-HD MA (WEB)
+  score: -10000
+- name: DTS-X (WEB)
+  score: -10000
+- name: Extras
+  score: -10000
+- name: SDR (no WEBDL)
+  score: -10000
+- name: Sing Along
+  score: -10000
+- name: TrueHD (WEB)
+  score: -10000
+- name: TrueHD Missing
+  score: -10000
+- name: Upscaled
+  score: -10000
 custom_formats_sonarr: []
 qualities:
 - id: -1
@@ -44,4 +106,4 @@ qualities:
 upgrade_until:
   id: -1
   name: 2160p Remux
-language: must_english
+language: any
