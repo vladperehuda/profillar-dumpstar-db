@@ -1,0 +1,47 @@
+name: Movies 2160p Remux
+description: Prioritise high quality lossless copies of UHD Blurays.
+tags: []
+upgradesAllowed: true
+minCustomFormatScore: 750
+upgradeUntilScore: 10000
+minScoreIncrement: 0
+custom_formats: []
+custom_formats_radarr: []
+custom_formats_sonarr: []
+qualities:
+- id: -1
+  name: 2160p Remux
+  description: ''
+  qualities:
+  - id: 3
+    name: Remux-2160p
+  - id: 4
+    name: Bluray-2160p
+  - id: 5
+    name: WEBDL-2160p
+- id: -2
+  name: 1080p Remux
+  description: ''
+  qualities:
+  - id: 8
+    name: Remux-1080p
+  - id: 10
+    name: Bluray-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 11
+    name: WEBRip-1080p
+- id: -3
+  name: 720p
+  description: ''
+  qualities:
+  - id: 13
+    name: Bluray-720p
+  - id: 14
+    name: WEBDL-720p
+  - id: 15
+    name: WEBRip-720p
+upgrade_until:
+  id: -1
+  name: 2160p Remux
+language: must_english
